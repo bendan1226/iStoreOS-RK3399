@@ -106,14 +106,14 @@ jobs:
         mixkey: ${{ matrix.os }}-${{ matrix.ARCHITECTURE }}-${{ matrix.REPO_BRANCH }}
         prefix: ${{ github.workspace }}/openwrt
 
-    - name: 加载自定义配置
+    - name: 加载自定义 feeds
+      env:
+        FEEDS_CONF_PATH: ${{ env.FEEDS_CONF }}
       run: |
-        ls -la openwrt
-        [[ -d "files" ]] && mv -f files openwrt/files
-        [[ -e "${CONFIG_FILE}" ]] && cp -f ${CONFIG_FILE} openwrt/.config
-        chmod +x ${DIY_P2_SH}
-        cd openwrt/
-        ${GITHUB_WORKSPACE}/${DIY_P2_SH}
+        [ -e $FEEDS_CONF_PATH ] && mv $FEEDS_CONF_PATH openwrt/$FEEDS_CONF
+        chmod +x $DIY_P1_SH
+        cd openwrt
+        $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: 更新 feeds
       run: cd openwrt && ./scripts/feeds update -a
@@ -122,12 +122,11 @@ jobs:
       run: cd openwrt && ./scripts/feeds install -a
 
     - name: 加载自定义配置
-      env:
-        CONFIG_FILE_PATH: ${{ env.CONFIG_FILE }}
       run: |
-        [ -e files ] && mv files openwrt/files
-        [ -e $CONFIG_FILE_PATH ] && mv $CONFIG_FILE_PATH openwrt/$CONFIG_FILE
-        chmod +x $DIY_P2_SH
+        ls -la openwrt
+        [[ -d "files" ]] && mv -f files openwrt/files
+        [[ -e "${CONFIG_FILE}" ]] && cp -f ${CONFIG_FILE} openwrt/.config
+        chmod +x ${DIY_P2_SH}
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
 
