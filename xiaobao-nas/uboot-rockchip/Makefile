@@ -173,7 +173,7 @@ endef
 
 define U-Boot/xiaobao-nas-rk3399
   $(U-Boot/rk3399/Default)
-  NAME:=XiaoBao nas
+  NAME:=XiaoBao NAS
   BUILD_DEVICES:= \
     codinge_xiaobao-nas
 endef
@@ -363,7 +363,7 @@ define U-Boot/rock5a-rk3588s
 endef
 
 UBOOT_TARGETS := \
-  tpm312-rk3399 \
+  xiaobao-nas-rk3399 \
   nanopc-t4-rk3399 \
   nanopi-r4s-rk3399 \
   nanopi-r4se-rk3399 \
