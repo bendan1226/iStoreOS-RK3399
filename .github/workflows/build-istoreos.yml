@@ -16,6 +16,7 @@ on:
         options:
           - am40
           - dg3399
+          - dlfr100
           - fmx1-pro
           - fnet3399
           - tpm-312
