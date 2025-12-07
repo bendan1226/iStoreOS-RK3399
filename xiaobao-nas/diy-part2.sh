@@ -21,7 +21,7 @@ endef
 TARGET_DEVICES += codinge_xiaobao-nas" >> target/linux/rockchip/image/armv8.mk
 
 # 复制修改好的uboot/Makefile到对应目录
-cp -f $GITHUB_WORKSPACE/xioabao-nas/uboot-rockchip/Makefile package/boot/uboot-rockchip/Makefile
+cp -f $GITHUB_WORKSPACE/xiaobao-nas/uboot-rockchip/Makefile package/boot/uboot-rockchip/Makefile
 
 # 复制patch到对应的目录
 cp -f $GITHUB_WORKSPACE/xiaobao-nas/uboot-rockchip/patches/994-rk3399-xiaobao-nas-uboot.patch package/boot/uboot-rockchip/patches/994-rk3399-xiaobao-nas-uboot.patch
