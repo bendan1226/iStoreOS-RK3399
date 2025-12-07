@@ -11,10 +11,24 @@
 
 ### RK3399-dev
 
-| 设备           | 包名称                                                                   |
+| 设备           | 包名称                                                                    |
 | -------------- | ------------------------------------------------------------------------ |
+| am40           | istoreos-rockchip-armv8-smart_am40-ext4-sysupgrade.img.gz                |
+| am40           | istoreos-rockchip-armv8-smart_am40-squashfs-sysupgrade.img.gz            |
+| dg3399         | istoreos-rockchip-armv8-erya_rockchip_dg3399-ext4-sysupgrade.img.gz      |
+| dg3399         | istoreos-rockchip-armv8-rockchip_dg3399-squashfs-sysupgrade.img.gz       |
+| dlfr100        | istoreos-rockchip-armv8-dilusense_dlfr100-ext4-sysupgrade.img.gz         |
+| dlfr100        | istoreos-rockchip-armv8-dilusense_dlfr100-squashfs-sysupgrade.img.gz     |
+| fmx1-pro       | istoreos-rockchip-armv8-rockchip_fmx1-pro-ext4-sysupgrade.img.gz         |
+| fmx1-pro       | istoreos-rockchip-armv8-rockchip_fmx1-pro-squashfs-sysupgrade.img.gz     |
 | fnet-3399      | istoreos-rockchip-armv8-erya_fnet-3399-ext4-sysupgrade.img.gz            |
 | fnet-3399      | istoreos-rockchip-armv8-erya_fnet-3399-squashfs-sysupgrade.img.gz        |
+| tpm312         | istoreos-rockchip-armv8-rockchip_tpm312-ext4-sysupgrade.img.gz           |
+| tpm312         | istoreos-rockchip-armv8-rockchip_tpm312-squashfs-sysupgrade.img.gz       |
+| tvi3315a       | istoreos-rockchip-armv8-rockchip_tvi3315a-ext4-sysupgrade.img.gz         |
+| tvi3315a       | istoreos-rockchip-armv8-rockchip_tvi3315a-squashfs-sysupgrade.img.gz     |
+| xiaobao-nas    | istoreos-rockchip-armv8-codinge_xiaobao-nas-ext4-sysupgrade.img.gz       |
+| xiaobao-nas    | istoreos-rockchip-armv8-codinge_xiaobao-nas-squashfs-sysupgrade.img.gz   |
 ## 鸣谢
 
 - [istoreos](https://github.com/istoreos/istoreos)
