@@ -11,7 +11,7 @@
 > [!TIP]
 > 此仓库为 **RK3399设备构建iStoreOS，后续更新添加设备中；非官方构建，不保证完全无BUG，需要定制的自行fork本仓库后，修改配置.config** 。
 
-> **如果某些设备WiFi不可用，请去(https://github.com/armbian/firmware)仓库找对应的无线网卡驱动，复制到对应目录替换**
+> **如果某些设备WiFi不可用，请去[仓库](https://github.com/armbian/firmware)找对应的无线网卡驱动，复制到对应目录替换**
 
 ## RK3399-dev
 
