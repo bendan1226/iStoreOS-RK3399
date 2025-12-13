@@ -1,16 +1,17 @@
-### iStore OS 固件 
+## iStore OS 固件 
 
 [![iStore使用文档](https://img.shields.io/badge/使用文档-iStore%20OS-brightgreen?style=flat-square)](https://doc.linkease.com/zh/guide/istoreos) 
 
-### 仓库介绍
+## 仓库介绍
 **iStoreOS** 是入门级的路由系统，也是入门级的 NAS 系统， 基于原版 OpenWRT，在 ARS2 上经过长期迭代，最终开放适配到多个硬件平台。 
+
 更多信息请参阅https://github.com/istoreos
 
 > [!TIP]
 > 此仓库为 **RK3399设备构建iStoreOS，后续更新添加设备中；非官方构建，不保证完全无BUG，需要定制的自行fork本仓库后，修改配置.config** 。
 
 
-### RK3399-dev
+## RK3399-dev
 
 | ----           | 支持设备                                                                                |
 | -------------- | ------------------------------------------------------------------------------------|
