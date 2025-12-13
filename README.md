@@ -31,7 +31,7 @@
 - [istoreos](https://github.com/istoreos/istoreos)
 - [P3TERX/Actions-OpenWrt](https://github.com/P3TERX/Actions-OpenWrt)
 - [xiaomeng9597](https://github.com/xiaomeng9597)
-- [cm9vdA](https://github.com/cm9vdA/build-linux))
+- [cm9vdA](https://github.com/cm9vdA/build-linux)
 - [GitHub Actions](https://github.com/features/actions)
 - [OpenWrt](https://github.com/openwrt/openwrt)
 - [Lean&#39;s OpenWrt](https://github.com/coolsnowwolf/lede)
@@ -43,7 +43,7 @@
 - [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
 
 
-## 🙏 免责声明
+##  免责声明
 - 本固件仅供学习研究，严禁用于任何商业用途
 - 使用本固件产生的所有后果均由使用者自行承担
 - 固件仍可能存在缺陷，开发者不提供任何形式的技术支持
