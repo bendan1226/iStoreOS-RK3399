@@ -16,7 +16,7 @@ echo -e "\\ndefine Device/dilusense_dlfr100
   SOC := rk3399
   UBOOT_DEVICE_NAME := dlfr100-rk3399
   IMAGE/sysupgrade.img.gz := boot-common | boot-script | pine64-img | gzip | append-metadata
-  DEVICE_PACKAGES := kmod-r8168 -urngd
+  DEVICE_PACKAGES := kmod-r8168 -urngd kmod-usb-net-rtl8152
 endef
 TARGET_DEVICES += dilusense_dlfr100" >> target/linux/rockchip/image/armv8.mk
 
