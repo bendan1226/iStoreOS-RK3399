@@ -1,3 +1,4 @@
+![iStoreOS Logo](https://github.com/Lemon1151/iStoreOS-RK3399/raw/RK3399-dev/istoreos.png)
 ## iStore OS 固件 
 
 [![iStore使用文档](https://img.shields.io/badge/使用文档-iStore%20OS-brightgreen?style=flat-square)](https://doc.linkease.com/zh/guide/istoreos) 
