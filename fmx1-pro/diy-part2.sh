@@ -16,7 +16,7 @@ echo -e "\\ndefine Device/rockchip_fmx1-pro
   SOC := rk3399
   UBOOT_DEVICE_NAME := fmx1-pro-rk3399
   IMAGE/sysupgrade.img.gz := boot-common | boot-script | pine64-img | gzip | append-metadata
-  DEVICE_PACKAGES := kmod-rtl8821ae kmod-usb-net-rtl8152
+  DEVICE_PACKAGES := kmod-rtl8821ae kmod-usb-net-rtl8152 brcmfmac-firmware-4329-sdio wpad
 endef
 TARGET_DEVICES += rockchip_fmx1-pro" >> target/linux/rockchip/image/armv8.mk
 
