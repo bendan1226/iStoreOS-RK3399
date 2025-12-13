@@ -1,14 +1,4 @@
-<div align="center">
-  <img src="./files/screenshot/istoreos.png" style="max-width: 100%; height: auto;" />
-  <h1>基于imagebuilder与ophub打包工具的iStoreOS固件</h1>
-
-  <img src="https://img.shields.io/github/downloads/Kwonelee/iStoreOS-Actions/total.svg?style=for-the-badge&color=32C955"/>
-  <img src="https://img.shields.io/github/stars/Kwonelee/iStoreOS-Actions.svg?style=for-the-badge&color=orange"/>
-  <img src="https://img.shields.io/github/forks/Kwonelee/iStoreOS-Actions.svg?style=for-the-badge&color=ff69b4"/>
-  <img src="https://img.shields.io/github/license/Kwonelee/iStoreOS-Actions.svg?style=for-the-badge&color=blueviolet"/>
-
-</div>
-# iStore OS 固件 
+### iStore OS 固件 
 
 [![iStore使用文档](https://img.shields.io/badge/使用文档-iStore%20OS-brightgreen?style=flat-square)](https://doc.linkease.com/zh/guide/istoreos) 
 
