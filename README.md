@@ -11,7 +11,7 @@
 > [!TIP]
 > 此仓库为 **RK3399设备构建iStoreOS，后续更新添加设备中；非官方构建，不保证完全无BUG，需要定制的自行fork本仓库后，修改配置.config** 。
 
-> **如果某些设备WiFi不可用，请去[仓库](https://github.com/armbian/firmware)找对应的无线网卡驱动，复制到对应目录替换**
+> **如果某些设备WiFi不可用，请去[仓库](https://github.com/armbian/firmware)找对应的无线网卡驱动，复制到对应目录替换**。
 
 ## RK3399-dev
 
@@ -23,7 +23,7 @@
 ## 默认配置
 
 - 用户名: `root`
-- 密码: `password`
+- 密  码: `password`
 - 如果设备只有一个网口，则此网口就是 `LAN` ；如果设备有两个网口，则一个是 `WAN`，一个是`LAN`。
 
 
