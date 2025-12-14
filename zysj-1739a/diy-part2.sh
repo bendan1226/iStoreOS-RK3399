@@ -25,6 +25,6 @@ TARGET_DEVICES += rockchip_zysj" >> target/linux/rockchip/image/armv8.mk
 cp -f $GITHUB_WORKSPACE/zysj-1739a/uboot-rockchip/Makefile package/boot/uboot-rockchip/Makefile
 
 # 复制patch到对应的目录
-cp -f $GITHUB_WORKSPACE/zysj-1739a/uboot-rockchip/patches/986-rk3399-zysj-uboot.patch package/boot/uboot-rockchip/patches/986-rk3399-zysj-uboot.patch
+cp -f $GITHUB_WORKSPACE/zysj-1739a/uboot-rockchip/patches/987-rk3399-zysj-uboot.patch package/boot/uboot-rockchip/patches/987-rk3399-zysj-uboot.patch
 
-cp -f $GITHUB_WORKSPACE/zysj-1739a/kernel-rockchip/patches/986-rockchip-rk3399-zysj-kernel.patch target/linux/rockchip/patches-6.6/986-rockchip-rk3399-zysj-kernel.patch
+cp -f $GITHUB_WORKSPACE/zysj-1739a/kernel-rockchip/patches/987-rockchip-rk3399-zysj-kernel.patch target/linux/rockchip/patches-6.6/987-rockchip-rk3399-zysj-kernel.patch
