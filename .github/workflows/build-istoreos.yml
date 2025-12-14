@@ -25,6 +25,7 @@ on:
           - tpm-312
           - tvi3315a
           - xiaobao-nas
+          - zysj-1739a
 
 env:
   REPO_URL: https://github.com/istoreos/istoreos
