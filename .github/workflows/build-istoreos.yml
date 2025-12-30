@@ -11,7 +11,7 @@ on:
       board:
         description: "Select device board"
         required: false
-        default: "fmx1-pro"
+        default: "fnet3399"
         type: choice
         options:
           - am40
