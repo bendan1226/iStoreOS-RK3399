@@ -2,7 +2,7 @@ diff --git a/configs/sv-33a6x-rk3399_defconfig b/configs/sv-33a6x-rk3399_defconf
 new file mode 100644
 --- /dev/null
 +++ b/configs/sv-33a6x-rk3399_defconfig
-@@ -0,0 +1,76 @@
+@@ -0,0 +1,77 @@
 +CONFIG_ARM=y
 +CONFIG_SKIP_LOWLEVEL_INIT=y
 +CONFIG_COUNTER_FREQUENCY=24000000
