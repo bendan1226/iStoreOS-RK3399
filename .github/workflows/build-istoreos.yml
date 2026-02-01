@@ -210,7 +210,7 @@ jobs:
           - ⏱️ 编译时间: ${{ env.BUILD_DATE }}
           - 👤 用户名: root
           - 🔒 密码: password
-          - 📒 说明: 默认网口为LAN，旁路由模式，需要接入主路由器后进后台查找对应IP地址再访问。
+          - 📒 说明: 如果设备只有一个网口，则此网口就是 `LAN` ；如果设备有两个网口，则一个是 `WAN`，一个是`LAN`，需要接入主路由器后进后台查找对应IP地址再访问。
           ### iStoreOS Image Verification  
           - sha256sum   
         draft: false  
