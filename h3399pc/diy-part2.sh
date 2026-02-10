@@ -28,3 +28,5 @@ cp -f $GITHUB_WORKSPACE/h3399pc/uboot-rockchip/Makefile package/boot/uboot-rockc
 cp -f $GITHUB_WORKSPACE/h3399pc/uboot-rockchip/patches/974-rk3399-u-boot-h3399pc-fix.patch package/boot/uboot-rockchip/patches/974-rk3399-u-boot-h3399pc-fix.patch
 
 cp -f $GITHUB_WORKSPACE/h3399pc/kernel-rockchip/patches/974-rockchip-rk3399-h3399pc-kernel.patch target/linux/rockchip/patches-6.6/974-rockchip-rk3399-h3399pc-kernel.patch
+
+cp -f $GITHUB_WORKSPACE/h3399pc/kernel-rockchip/02_network target/linux/rockchip/armv8/base-files/etc/board.d/02_network
