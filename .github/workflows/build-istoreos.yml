@@ -173,8 +173,8 @@ jobs:
         # Clean up server space
         cd openwrt/
         [[ -d "output" ]] || mkdir output
-        if ls bin/targets/*/*/*.img.gz >/dev/null 2>&1; then
-          cp -f bin/targets/*/*/*.img.gz output/
+        if ls bin/targets/*/*/*.gz >/dev/null 2>&1; then
+          cp -f bin/targets/*/*/*.gz output/
         fi
 
         rm -rf $(ls . | grep -v "^output$" | xargs) 2>/dev/null
