@@ -2,9 +2,9 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=brcmfmac-firmware-fnet3399
 
-PKG_SOURCE_URL:=https://github.com/ophub/firmware.git
+PKG_SOURCE_URL:=https://github.com/yizhanghong/rk3399-firmware.git
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_VERSION:=3434f0ba9abcc29860858a36bd44a2736197ff76
+PKG_SOURCE_VERSION:=ee9df54cab893ccf4c4030b6b813f9741fcb8687
 PKG_MIRROR_HASH:=skip
 
 include $(INCLUDE_DIR)/package.mk
@@ -35,11 +35,11 @@ define Package/brcmfmac-firmware-fnet3399/install
 		$(PKG_BUILD_DIR)/firmware/brcm/brcmfmac43430-sdio.clm_blob \
 		$(1)/lib/firmware/brcm/brcmfmac43430-sdio.clm_blob
 	$(INSTALL_DATA) \
-		$(PKG_BUILD_DIR)/firmware/brcm/brcmfmac43430b0-sdio.bin \
-		$(1)/lib/firmware/brcm/brcmfmac43430b0-sdio.rockchip,rk3399.bin
+		$(PKG_BUILD_DIR)/firmware/brcm/brcmfmac43430b0-sdio.erya,fnet-3399.bin \
+		$(1)/lib/firmware/brcm/brcmfmac43430b0-sdio.erya,fnet-3399.bin
 	$(INSTALL_DATA) \
-		$(PKG_BUILD_DIR)/firmware/brcm/brcmfmac43430b0-sdio.txt \
-		$(1)/lib/firmware/brcm/brcmfmac43430b0-sdio.rockchip,rk3399.txt
+		$(PKG_BUILD_DIR)/firmware/brcm/brcmfmac43430b0-sdio.erya,fnet-3399.txt \
+		$(1)/lib/firmware/brcm/brcmfmac43430b0-sdio.erya,fnet-3399.txt
 endef
 
 $(eval $(call BuildPackage,brcmfmac-firmware-fnet3399))
