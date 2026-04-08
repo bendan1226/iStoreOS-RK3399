@@ -11,8 +11,8 @@
 diff --git a/arch/arm64/boot/dts/rockchip/rk3399-fnet-3399.dts b/arch/arm64/boot/dts/rockchip/rk3399-fnet-3399.dts
 new file mode 100644
 --- /dev/null
-+++ b/arch/arm64/boot/dts/rockchip/rk3399-fnet-3399.dts	2025-12-06 18:45:53.079921000 +0800
-@@ -0,0 +1,564 @@
++++ b/arch/arm64/boot/dts/rockchip/rk3399-fnet-3399.dts	2026-04-08 09:45:53.079921000 +0800
+@@ -0,0 +1,615 @@
 +// SPDX-License-Identifier: (GPL-2.0+ OR MIT)
 +
 +/dts-v1/;
