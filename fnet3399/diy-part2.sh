@@ -54,6 +54,10 @@ echo "
 CONFIG_PACKAGE_luci-app-fancontrol=y
 " >> .config
 
+echo "
+CONFIG_TARGET_ROOTFS_TARGZ=y
+" >> .config
+
 # add qmodem
 echo 'src-git qmodem https://github.com/yizhanghong/QModem.git;main' >> feeds.conf.default
 ./scripts/feeds update qmodem
