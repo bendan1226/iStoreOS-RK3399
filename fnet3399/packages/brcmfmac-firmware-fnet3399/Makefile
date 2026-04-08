@@ -26,7 +26,7 @@ define Package/brcmfmac-firmware-fnet3399/install
 		$(PKG_BUILD_DIR)/firmware/brcm/BCM43430B0.hcd \
 		$(1)/lib/firmware/brcm/BCM43430B0.hcd
 	$(INSTALL_DATA) \
-		$(PKG_BUILD_DIR)/firmware/brcm/brcmfmac43430-sdiob0.bin \
+		$(PKG_BUILD_DIR)/firmware/brcm/brcmfmac43430b0-sdio.bin \
 		$(1)/lib/firmware/brcm/brcmfmac43430b0-sdio.bin
 	$(INSTALL_DATA) \
 		$(PKG_BUILD_DIR)/firmware/brcm/brcmfmac43430b0-sdio.txt \
