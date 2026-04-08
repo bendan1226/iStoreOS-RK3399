@@ -31,6 +31,10 @@ cp -f $GITHUB_WORKSPACE/fnet3399/kernel-rockchip/patches/993-rockchip-rk3399-fne
 
 cp -f $GITHUB_WORKSPACE/fnet3399/kernel-rockchip/02_network target/linux/rockchip/armv8/base-files/etc/board.d/02_network
 
+
+# 集成wifi
+cp -a  $GITHUB_WORKSPACE/fnet3399/packages/* package/firmware/
+
 # add luci-app-fancontrol
 echo "src-git fancontrol https://github.com/rockjake/luci-app-fancontrol.git" >> feeds.conf.default
 ./scripts/feeds update fancontrol && ./scripts/feeds install -a -f -p fancontrol
