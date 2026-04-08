@@ -34,6 +34,18 @@ cp -f $GITHUB_WORKSPACE/fnet3399/kernel-rockchip/02_network target/linux/rockchi
 
 # 集成wifi
 cp -a  $GITHUB_WORKSPACE/fnet3399/packages/* package/firmware/
+cp -f $GITHUB_WORKSPACE/fnet3399/opwifi package/base-files/files/etc/init.d/opwifi
+chmod 755 package/base-files/files/etc/init.d/opwifi
+
+# 集成CPU性能跑分脚本
+cp -f $GITHUB_WORKSPACE/configfiles/coremark/coremark-arm64 package/base-files/files/bin/coremark-arm64
+cp -f $GITHUB_WORKSPACE/configfiles/coremark/coremark-arm64.sh package/base-files/files/bin/coremark.sh
+chmod 755 package/base-files/files/bin/coremark-arm64
+chmod 755 package/base-files/files/bin/coremark.sh
+
+
+# iStoreOS-settings
+git clone --depth=1 -b main https://github.com/xiaomeng9597/istoreos-settings package/default-settings
 
 # add luci-app-fancontrol
 echo "src-git fancontrol https://github.com/rockjake/luci-app-fancontrol.git" >> feeds.conf.default
