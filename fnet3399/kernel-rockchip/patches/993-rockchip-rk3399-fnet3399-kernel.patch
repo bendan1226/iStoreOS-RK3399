@@ -29,7 +29,7 @@ new file mode 100644
 +	aliases {
 +		ethernet0 = &gmac;
 +		mmc0 = &sdio0;
-+		mmc2 = &sdhci;
++		mmc1 = &sdhci;
 +	};
 +
 +	chosen {
