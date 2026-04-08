@@ -34,8 +34,8 @@ cp -f $GITHUB_WORKSPACE/fnet3399/kernel-rockchip/02_network target/linux/rockchi
 
 # 集成wifi
 cp -a $GITHUB_WORKSPACE/fnet3399/packages/* package/firmware/
-cp -f $GITHUB_WORKSPACE/fnet3399/opwifi package/base-files/files/etc/init.d/opwifi
-chmod 755 package/base-files/files/etc/init.d/opwifi
+#cp -f $GITHUB_WORKSPACE/fnet3399/opwifi package/base-files/files/etc/init.d/opwifi
+#chmod 755 package/base-files/files/etc/init.d/opwifi
 echo "
 CONFIG_PACKAGE_brcmfmac-firmware-fnet3399=y
 " >> .config
