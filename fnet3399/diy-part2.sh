@@ -63,7 +63,7 @@ CONFIG_TARGET_ROOTFS_TARGZ=y
 " >> .config
 
 # add qmodem
-echo 'src-git qmodem https://github.com/yizhanghong/QModem.git;main' >> feeds.conf.default
+echo 'src-git qmodem https://github.com/FUjr/QModem.git;main' >> feeds.conf.default
 ./scripts/feeds update qmodem
 ./scripts/feeds install -a -f -p qmodem
 # git clone -b v3.0.0 --depth=1 https://github.com/FUjr/QModem.git package/qmodem
