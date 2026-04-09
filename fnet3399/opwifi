@@ -10,7 +10,6 @@ board_name() {
 init_wifi() {
     local board=$(board_name)
     case "$board" in
-        jp,tvbox|\
         erya,fnet-3399|\
         panther,x2)
             case "$1" in
