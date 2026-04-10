@@ -52,7 +52,7 @@ chmod 755 package/base-files/files/bin/coremark.sh
 git clone --depth=1 -b main https://github.com/xiaomeng9597/istoreos-settings package/default-settings
 
 # add luci-app-fancontrol
-echo "src-git fancontrol https://github.com/rockjake/luci-app-fancontrol.git" >> feeds.conf.default
+echo "src-git fancontrol https://github.com/DHDAXCW/luci-app-fancontrol.git" >> feeds.conf.default
 ./scripts/feeds update fancontrol && ./scripts/feeds install -a -f -p fancontrol
 echo "
 CONFIG_PACKAGE_luci-app-fancontrol=y
