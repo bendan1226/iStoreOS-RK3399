@@ -30,6 +30,9 @@ on:
           - tvi3315a
           - xiaobao-nas
           - zysj-1739a
+  #schedule:
+  # - cron: 0 16 * * 4          
+  # #     分,时,日,月,周。每周五 20时执行一次 (UTC时间)
 
 env:
   REPO_URL: https://github.com/istoreos/istoreos
@@ -146,7 +149,14 @@ jobs:
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
         find dl -size -1024c -exec rm -f {} \;
-
+        
+    - name: SSH 连接到 Actions
+      uses: P3TERX/ssh2actions@main
+      if: (github.event.inputs.ssh == 'true' && github.event.inputs.ssh  != 'false') || contains(github.event.action, 'ssh')
+      env:
+       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+        
     - name: 编译固件 [ ${{ inputs.board }} ]
       id: compile
       run: |
@@ -163,8 +173,8 @@ jobs:
         # Clean up server space
         cd openwrt/
         [[ -d "output" ]] || mkdir output
-        if ls bin/targets/*/*/*.img.gz >/dev/null 2>&1; then
-          cp -f bin/targets/*/*/*.img.gz output/
+        if ls bin/targets/*/*/*.gz >/dev/null 2>&1; then
+          cp -f bin/targets/*/*/*.gz output/
         fi
 
         rm -rf $(ls . | grep -v "^output$" | xargs) 2>/dev/null
@@ -187,7 +197,7 @@ jobs:
 
     - name: 设置 Release Tag or date
       run: |
-        RELEASE_TAG="iStoreOS-24.10-RK3399-$(date +%Y.%m)"
+        RELEASE_TAG="iStoreOS-24.10-RK3399-$(date +%Y-%m)"
         echo "RELEASE_TAG=${RELEASE_TAG}" >> $GITHUB_ENV
         BUILD_DATE="$(date +%Y.%m.%d)"
         echo "BUILD_DATE=${BUILD_DATE}" >> $GITHUB_ENV
