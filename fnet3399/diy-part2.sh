@@ -58,6 +58,7 @@ echo "
 CONFIG_PACKAGE_luci-app-fancontrol=y
 " >> .config
 sed -i "s/hwmon9/hwmon2/g" feeds/fancontrol/luci-app-fancontrol/htdocs/luci-static/resources/view/fancontrol.js
+sed -i "s/hwmon9/hwmon2/g" feeds/fancontrol/fancontrol/files/fancontrol.config
 
 echo "
 CONFIG_TARGET_ROOTFS_TARGZ=y
